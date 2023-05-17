@@ -26,5 +26,5 @@
     "noEmit": true
   },
   "exclude": ["node_modules/", "dist/", "tests/"],
-  "include": ["./src"]
+  "include": ["./src", "examples"]
 }

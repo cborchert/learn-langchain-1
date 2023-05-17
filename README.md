@@ -25,8 +25,21 @@ At the time of writing, gpt-3.5-tubo costs $0.002 per 1000 tokens, so in the end
 - Create a `.env` file by copying `.env.example` and filling in the values
   - For `OPENAI_API_KEY`, you need to have an OpenAI account and create an API key [here](https://platform.openai.com/account/api-keys)
 - `npm install` to install dependencies
-- `npm start` to run your program
+- `npm start` to run the program located at `./index.ts`
 
+# Examples
+
+The goal of this project is for me to personally learn about langchain, llms, embeddings, and vector databases. As I learn, I'll be creating documented examples in the `./src/examples` directory. 
+
+To run an individual example, you can use `ts-node`. 
+
+Install `ts-node` and `typescript` globally:
+
+```
+npm install -g ts-node typescript
+```
+
+Now you can run the individual example using `ts-node --esm ./examples/<EXAMPLE FILE NAME>.ts`
 
 # Dev and build
 

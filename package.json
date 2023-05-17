@@ -27,6 +27,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
     "dotenv": "^16.0.3",
     "langchain": "^0.0.39",
     "tsup": "^6.7.0"
