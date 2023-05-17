@@ -20,9 +20,8 @@ import { TensorFlowEmbeddings } from "langchain/embeddings/tensorflow";
 
 import { RetrievalQAChain } from "langchain/chains";
 import { OpenAI } from "langchain/llms/openai";
-import { getUserInput } from "../src/lib/input.ts";
-// import { estimateCostEmbedding } from "../src/lib/estimateUsage.ts";
 
+import { getUserInput } from "../src/lib/input.ts";
 
 // load environment variables from .env
 dotenv.config();
@@ -53,6 +52,7 @@ const model = new OpenAI({
   });
 
 
+// Allow the user to ask questions about the documents
 while (true) {
     const prompt = await getUserInput("What shall we query (type exit to quit)?");
     if (!prompt || prompt.toLowerCase() === "exit" || prompt.toLowerCase() === "quit") {
