@@ -110,5 +110,6 @@ const similaritySearchResults = await vectorStore3.similaritySearch(prompt, 2);
 console.log("Similarity search results: ", similaritySearchResults);
 
 
-// NEXT STEP: 
+// NEXT STEP: create a retrieval QA system
 // @see https://docs.langchain.com/docs/use-cases/qa-docs
+// @see https://js.langchain.com/docs/modules/chains/index_related_chains/retrieval_qa
