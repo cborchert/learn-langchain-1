@@ -28,6 +28,10 @@ At the time of writing, gpt-3.5-tubo costs $0.002 per 1000 tokens, so in the end
 - `npm install` to install dependencies
 - `npm start` to run the program located at `./index.ts`
 
+## Notes on dependencies
+
+We're using tensorflow version ^3.21.0 despite version 4.5 being available. This is due to a peer dependency of `@tensorflow-models/universal-sentence-encoder` on tensorflor ^3.6 which means we cannot install v4+.
+
 
 # Examples
 
