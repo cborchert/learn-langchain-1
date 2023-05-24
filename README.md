@@ -49,6 +49,8 @@ npm install -g ts-node typescript
 
 Now you can run the individual example using `ts-node --esm ./examples/<EXAMPLE FILE NAME>.ts`
 
+Note that certain examples use data from the untracked `./_sources` directory. You will need to create and populate this directory yourself. I suggest copying the `./_example_sources` directory and renaming it to `./_sources` to get started. 
+
 # Dev and build
 
 - `npx turbo run build lint format` to run build scripts quickly in parallel
