@@ -36,7 +36,9 @@
     "@tensorflow/tfjs-core": "^3.21.0",
     "@tensorflow/tfjs-node": "^4.5.0",
     "dotenv": "^16.0.3",
+    "gpt4all": "file:./patched_dependencies/gpt4all",
     "langchain": "^0.0.75",
+    "langchain-gpt4all": "^0.0.73",
     "tsup": "^6.7.0"
   },
   "devDependencies": {

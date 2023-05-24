@@ -25,12 +25,14 @@ At the time of writing, gpt-3.5-tubo costs $0.002 per 1000 tokens, so in the end
 - Make sure that you are using node version 18+ you can check this with `node -v`.
 - Create a `.env` file by copying `.env.example` and filling in the values
   - For `OPENAI_API_KEY`, you need to have an OpenAI account and create an API key [here](https://platform.openai.com/account/api-keys)
-- `npm install` to install dependencies
-- `npm start` to run the program located at `./index.ts`
+- `yarn install` to install dependencies
+- `yarn start` to run the program located at `./index.ts`
 
 ## Notes on dependencies
 
 We're using tensorflow version ^3.21.0 despite version 4.5 being available. This is due to a peer dependency of `@tensorflow-models/universal-sentence-encoder` on tensorflor ^3.6 which means we cannot install v4+.
+
+We're using a local version of gpt4all (see the patched_dependencies directory) due to an error in the currently available npm module. As a consequence, you will not be able to install the project with npm. Please use yarn. This dependency will be replaced with the official one once the npm module is updated. 
 
 
 # Examples
@@ -50,7 +52,7 @@ Now you can run the individual example using `ts-node --esm ./examples/<EXAMPLE 
 # Dev and build
 
 - `npx turbo run build lint format` to run build scripts quickly in parallel
-- `npm start` to run your program
+- `yarn start` to run your program
 
 
 # langchain-ts-starter notes
